@@ -1,0 +1,15 @@
+# Create MongoDB instance
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    ports: 
+      - "27017:27017"
+    environment:
+      #MONGO_INITDB_ROOT_USERNAME: root
+      #MONGO_INITDB_ROOT_PASSWORD: Keepth3m0ut
+      MONGO_INITDB_DATABASE: koa-graphql
+
+#volume?
+#volumes: 
